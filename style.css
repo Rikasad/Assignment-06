@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Work Sans', sans-serif;
+} 
+.banner{
+    background-image: url(images/banner.png );
+    width: full;
+    background-repeat: no-repeat;
+    height: 600px;
+    text-align: center;
+    
+    
+}
+.vl {
+    margin-left: 50px;
+    border-left: 3px dotted #bbb;
+    height: 900px;
+    
+  }
+  
