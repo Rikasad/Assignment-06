@@ -3,11 +3,11 @@
     font-family: 'Work Sans', sans-serif;
 } 
 .banner{
-    background-image: url(images/banner.png );
-    width: full;
-    background-repeat: no-repeat;
+    background: url(images/banner.png );
+     background-repeat: no-repeat;  
     height: 600px;
     text-align: center;
+  background-size: auto;
     
     
 }
@@ -17,4 +17,5 @@
     height: 900px;
     
   }
+  
   

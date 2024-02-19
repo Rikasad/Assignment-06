@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body class="max-w-[1200px] mx-auto">
 <header class="mx-24 ">
     <div class="navbar"> <div class="navbar bg-base-100">
         <div class="navbar-start">
@@ -44,7 +44,7 @@
     </div>
 
     <!-- Banner -->
-    <div class=" banner pt-40 ">
+    <div class=" banner pt-40    ">
         <div class="banner-container ">
         <h1 class="text-3xl text-white font-extrabold ">End-to-End Teavel  With <br> <span class="text-3xl text-[#32CD32] font-extrabold ">Pabna Express</span> </h1> 
         <p class="text-xl font-normal text-white">Yes,you can run until tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined.</p>
@@ -144,10 +144,10 @@
       <p>By purchasing the ticket, customer agrees to buy the ticket with the mentioned price. <br> Later no claim will be accepted by authority.</p>
     </div>
     <div class="flex mx-24  bg-white px-5 mt-10">
-      <div class="flex ">
+      <div class="flex justify-around">
         <div>
-          <div class="flex space-x-4">
-            <div class="flex mr-40 py-5 w-96">
+          <div class="flex justify-between">
+            <div class="flex justify-around py-5 w-96">
               <div >
                 <div><img src="images/bus-logo.png" alt=""> </div>
               </div>
@@ -158,7 +158,7 @@
               </div>
             </div>
             <div class="p-5 flex ml-10">
-              <div class=" btn  bg-white border border-[#32CD32]" ><img src="images/seat-green-filled.png" alt=""> <button class=" text-[#32CD32] ">40 Seats Left</button>
+              <div class=" btn  bg-white border border-[#32CD32]" ><img src="images/seat-green-filled.png" alt=""> <button class=" text-[#32CD32] "> <span id="seatAvailable"> 40 </span>  Seats Left</button>
               </div>
             </div>
           </div>
@@ -210,97 +210,112 @@
       <h3 class="text-sm font-semibold mb-5 ">Select Your Seat</h3>
       <hr>
       <div class="flex justify-between my-3">
-        <div class="flex"> <img src="images/seat-gray.png" alt=""><h3 class="text-gray-400 text-sm">Available </h3></div>
-        <div class="flex"> <img src="images/seat-green-filled.png" alt=""><h3 class="text-[#32CD32] text-sm">Selected</h3></div>  
+        <div class="flex"> <img src="images/seat-gray.png" alt=""><h3 class="text-gray-400 text-sm">  Available </h3></div>
+        <div class="flex"> <img src="images/seat-green-filled.png" alt=""><h3 class="text-[#32CD32] text-sm"> Selected </h3></div>  
       </div>
       <hr>
 
     </div>
-    <div class="flex justify-end">
+    <div class="flex justify-end ">
       <div class="btn  bg-white text-[#32CD32] border border-[#32CD32] mt-5 " ><button> <img src="images/steering-wheel.png" alt=""></button>
       </div>
     </div>
-    <!-- bus seat -->
-    <div>
-      <div class="grid grid-cols-5 gap-3">
-        <div class="seat">A</div>
-        <div class="seat btn ">A1</div>
-        <div class="seat btn">A2</div>
+    <!-- bus seat  -->
+    <div class="my-5">
+      <div class="grid grid-cols-5 gap-3 ">
+        <div class="">A</div>
+        <div  class="seat btn">A1</div>
+        <div  class="seat btn">A2</div>
         <div class="seat btn">A3</div>
-        <div class="seat btn">A4</div>
-        <div class="seat">B</div>
-        <div class="seat btn">B1</div>
-        <div class="seat btn">B2</div>
-        <div class="seat btn">B3</div>
-        <div class="seat btn">B4</div>
-        <div class="seat">C</div>
+        <div  class="seat btn">A4</div>
+        <div class="">B</div>
+        <div  class="seat btn">B1</div>
+        <div  class="seat btn">B2</div>
+        <div  class="seat btn">B3</div>
+        <div  class="seat btn">B4</div>
+        <div class="">C</div>
         <div class="seat btn">C1</div>
-        <div class="seat btn">C2</div>
+        <div  class="seat btn">C2</div>
         <div class="seat btn">C3</div>
-        <div class="seat btn">C4</div>
-        <div class="seat ">D</div>
-        <div class="seat btn">D1</div>
-        <div class="seat btn">D2</div>
-        <div class="seat btn">D3</div>
-        <div class="seat btn">D4</div>
-        <div class="seat">E</div>
+        <div  class="seat btn">C4</div>
+        <div  class="">D</div>
+        <div  class="seat btn">D1</div>
+        <div  class="seat btn">D2</div>
+        <div  class="seat btn">D3</div>
+        <div id="green" class="seat btn">D4</div>
+        <div  class="">E</div>
         <div class="seat btn">E1</div>
-        <div class="seat btn">E2</div>
-        <div class="seat btn">E3</div>
+        <div  class="seat btn">E2</div>
+        <div  class="seat btn">E3</div>
         <div class="seat btn">E4</div>
-        <div class="seat ">F</div>
-        <div class="seat btn">F1</div>
-        <div class="seat btn">F2</div>
-        <div class="seat btn">F3</div>
-        <div class="seat btn">F4</div>
-        <div class="seat">G</div>
-        <div class="seat btn">G1</div>
-        <div class="seat btn">G2</div>
+        <div class=" ">F</div>
+        <div  class="seat btn">F1</div>
+        <div  class="seat btn">F2</div>
+        <div  class="seat btn">F3</div>
+        <div  class="seat btn">F4</div>
+        <div class="">G</div>
+        <div  class="seat btn">G1</div>
+        <div  class="seat btn">G2</div>
         <div class="seat btn">G3</div>
         <div class="seat btn">G4</div>
-        <div class="seat">H</div>
+        <div class="">H</div>
         <div class="seat btn">H1</div>
         <div class="seat btn">H2</div>
         <div class="seat btn">H3</div>
         <div class="seat btn">H4</div>
-        <div class="seat">I</div>
-        <div class="seat btn">I1</div>
-        <div class="seat btn">I2</div>
+        <div class="">I</div>
+        <div  class="seat btn">I1</div>
+        <div  class="seat btn">I2</div>
         <div class="seat btn">I3</div>
-        <div class="seat btn">I4</div>
-        <div class="seat">J</div>
-        <div class="seat btn">J1</div>
+        <div  class="seat btn">I4</div>
+        <div  class="">J</div>
+        <div  class="seat btn">J1</div>
         <div class="seat btn">J2</div>
         <div class="seat btn">J3</div>
-        <div class="seat btn">J4</div>
+        <div  class="seat btn">J4</div>
       </div>
     </div> 
   </div>
   <Div class="vl " > </Div>
-  <div class="  w-64">
+  <div>
     <!-- right side -->
-    <div class="">
+    <div  >
+      
       <h3 class="text-sm font-semibold mb-5 ">Select Your Seat</h3>
       <hr>
-      <div>
-        <div class="seat_and_price">
-         
+      <div id="test">
+        <div class="flex justify-between">
+          <h1 >Seat <span id="seatCount" class="bg-[#32CD32] rounded-3xl text-white">0</span></h1>
+          <h1>Class</h1>
+          <h1>Price</h1>
         </div>
+
       </div>
+     
       <hr>
-      <h3>
-        Total Price:
-      </h3>
+      <div id="title-container"></div>
+      <div class="flex justify-between">
+        <div>
+          <h3>
+            Total Price: $ 
+          </h3>
+        </div>
+        <div>
+          <span id="totalPrice"></span></div>
+        </div>
+         
+      
+     
       <div class="flex ">
        
-          <input type="text" placeholder="Have any coupon?" class="w-40 h-10">
+          <input id="input-field" type="text" placeholder="Have any coupon?" class="w-40 mt-5 rounded-xl">
         
-          <div class="btn btn-wide w-14 p-1  text-white bg-[#32CD32] border border-[#32CD32] mt-5 " ><button> Apply</button>
+          <div  class="btn btn-wide w-14 p-1  text-white bg-[#32CD32] border border-[#32CD32] mt-5 " ><button id="apply-button"> Apply</button>
           </div> 
       </div>
-      <div>
+      <div class="flex justify-between">
         <h3 class="text-lg font-bold">Grand Total</h3>
-        <p class="text-lg font-bold"> BDT </p>
+        <p class="text-lg font-bold"> <span id="discountElement"></span> BDT </p>
       </div>
       
     </div>
@@ -333,13 +348,13 @@
 
 </main>
 
-  <footer class="footer p-10 bg-neutral text-neutral-content">
+  <footer class="footer p-10 bg-gray-900 text-neutral-content flex justify-between px-24 mt-10">
     <aside>
-      <h3>Pabna Express</h3>
-      <p>Pabna Express<br>Gives You a smooth Experience</p>
+      <h3 class="text-2xl font-semibold text-white">Pabna Express</h3>
+      <p class="text-sm  text-white" >Pabna Express<br>Gives You a smooth Experience</p>
     </aside> 
     <nav>
-      <h6 class="footer-title">Download our app</h6> 
+      <h6 class="footer-title text-lg font-bold text-white">Download our app</h6> 
       <div class="border border-white bg-black flex p-2 rounded-lg">
         <div><img src="images/playstore.png" alt=""></div>
         <div><p>Get it</p>
@@ -347,8 +362,8 @@
         </div>
         
       </div>
-      <hr>
       
+
     </nav>
   </footer>
 
