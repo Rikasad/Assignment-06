@@ -9,6 +9,14 @@ for ( let index=0; index< seats.length; index++){
     const seat =seats[index];
     // console.log(seat);
     seat.addEventListener("click", function(){
+      if(titleCount <=3 ){
+        
+
+      }
+      else{
+        document.getElementsByClassName("seat").disabled = True;
+        alert("Can't select more than 4")
+      }
         // console.log("clicked");
 
 
